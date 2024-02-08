@@ -1,0 +1,165 @@
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 57: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 57: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 58: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 62: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 53: error #29: expected an expression
+"../main.c", line 53: error #20: identifier "i" is undefined
+"../main.c", line 65: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 53: error #29: expected an expression
+"../main.c", line 53: error #20: identifier "i" is undefined
+"../main.c", line 65: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 66: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 66: warning #112-D: statement is unreachable
+"../main.c", line 10: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
