@@ -13,6 +13,7 @@ main.obj: /home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include
 main.obj: /home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
 main.obj: /home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h
 main.obj: ../tm4c123gh6pm.h
+main.obj: ../systick.h
 
 ../main.c:
 
@@ -39,4 +40,6 @@ main.obj: ../tm4c123gh6pm.h
 /home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h:
 
 ../tm4c123gh6pm.h:
+
+../systick.h:
 

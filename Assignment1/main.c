@@ -1,146 +1,169 @@
+/****************************************Header*****************************************************
+ * University of Southern Denmark
+ * Embedded Programming (EMP)
+ * File:   main.c
+ * Author: Daniel, Mads, Valdemar
+ * Date: 10/10/2021
+ * Purpose: To change the color of the LED on the Tiva C Launchpad using the onboard switch
+
+/*************************************Include Files*************************************************/
 #include <stdint.h>
 #include <stdbool.h>
 #include "tm4c123gh6pm.h"
+#include "systick.h"
 
-/**
- * main.c
- */
+/*************************************Defines******************************************/
+#define TIM_200_MS 40
 
+/*************************************Constants******************************************/
+const int double_press_time = 300000;
+const int automode_time = 1000000;
+const int debouncing_delay_time = 400000;
 
-// Timer0 A interrupt service routine
-void Timer0A_Handler(void) {
-    // Clear the timer interrupt
-    TIMER0_ICR_R = TIMER_ICR_TATOCINT;
-    
+/*************************************Variables*************************************************/
+int double_press_timer; // The timing between press
+extern int ticks;
+int alive_timer = TIM_200_MS;
+bool automode_active; // if automode is active
+int color_count = 0;
+bool direction_up = true; // Decrement or increment
+
+/*************************************Functions*************************************************/
+void GPIOF_Init(void)
+{
+    /**************************************************************************************
+    * Input: None
+    * Output: None
+    * Function: Initializes GPIO Port F for button and LED
+    **************************************************************************************/
+    SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R5; // Enable clock to GPIO Port F
+    while ((SYSCTL_PRGPIO_R & SYSCTL_PRGPIO_R5) == 0){}; // Wait for clock to stabilize
+
+    GPIO_PORTF_DIR_R &= ~0x10; // Set PF4 (SW1) as input
+    GPIO_PORTF_DIR_R |= 0x0E;  // Set PF1, PF2, and PF3 (LEDs) as outputs
+    GPIO_PORTF_DEN_R |= 0x1E;  // Enable digital function on PF1, PF2, PF3 and PF4
+    GPIO_PORTF_PUR_R |= 0x10;  // Enable pull-up on PF4
+    GPIO_PORTF_IS_R &= ~0x10;  // PF4 is edge-sensitive not high/low
+    GPIO_PORTF_IBE_R &= ~0x10; // PF4 is not both edges
+    GPIO_PORTF_IEV_R &= ~0x10; // PF4 falling edge event (release) press??????
+    GPIO_PORTF_ICR_R |= 0x10;  // Clear the interrupt flag for PF4
+    GPIO_PORTF_IM_R |= 0x10;   // Enable interrupt on PF4 (SW1)
+    NVIC_EN0_R = 1 << 30;      // Enable interrupt 30 in NVIC
 }
 
 void GPIOF_Handler(void)
 {
-    // Clear the interrupt flag
-    GPIO_PORTF_ICR_R = 0x10;
+    /**************************************************************************************
+     * Input: None
+     * Output: None
+     * Function: Interrupt handler for GPIO Port F
+     ***************************************************************************************/
 
-    // Handle the interrupt (toggle an LED, for example)
-    GPIO_PORTF_DATA_R ^= 0x02;
+    if (GPIO_PORTF_RIS_R & 0x10) // Check if interrupt was caused by PF4
+    {
+        automode_active = false; // Stop automode
+
+        // Set direction for double press
+        if (double_press_timer < double_press_time)
+        {
+            direction_up = !direction_up; // Toggle direction
+        }
+        else
+        {
+            // CALL FUNCTION TO CHANGE LED
+            LED_Changer();
+        }
+
+        // Delay for debouncing
+        int i = 0;
+        for (i = 0; i < debouncing_delay_time; i++);
+        double_press_timer = 0;
+
+        GPIO_PORTF_ICR_R |= 0x10; // Clear the interrupt flag for PF4
+    }
 }
 
+void LED_Changer(void)
+{
+    /**************************************************************************************
+     * Input: None
+     * Output: None
+     * Function: Changes the color of the LED
+     ***************************************************************************************/
+
+    int color[] = {0x00, 0x08, 0x04, 0x0C, 0x02, 0x0A, 0x06, 0x0E};
+    if (direction_up)
+    {
+        // count < 7 increment by 1 or set 0
+        color_count = (color_count < 7) ? color_count + 1 : 0;
+    }
+    else
+    {
+        // count > 7 decrement by 1 or set 7
+        color_count = (color_count > 0) ? color_count - 1 : 7;
+    }
+    GPIO_PORTF_DATA_R = color[color_count]; // Toggle the LEDS on PF1, PF2 and PF3
+}
+
+void auto_mode(void)
+{
+    /**************************************************************************************
+     * Input: None
+     * Output: None
+     * Function: Changes the color of the LED every 200ms
+     ***************************************************************************************/
+
+    // GPIO_PORTF_DATA_R &= ~(0xFF);
+    while (!ticks)
+        ;
+
+    // Decrement ticks every 5ms.--;
+
+    ticks--;
+
+    if (!--alive_timer)
+    {
+        LED_Changer();
+        alive_timer = TIM_200_MS;
+    }
+}
 
 int main(void)
 {
-    int dummy;
+/**************************************************************************************
+ * Input: None  
+ * Output: None 
+ * Function: Main function 
+ ***************************************************************************************/
+    
+    GPIOF_Init(); // Initialize GPIO Port F for button and LED
+    init_systick();
+    double_press_timer = double_press_time; // Start at 10000 to make sure it doesn't count the first press as a double press.
+    int autotimer = 0;
+    automode_active = false;
 
-    //Enable the GPIO port that is used for the on-board LEDs and switches
-    SYSCTL_RCGC2_R = SYSCTL_RCGC2_GPIOF;
-
-    //Do a dummy read to insert a few cycles after enabling the peripheral
-    dummy = SYSCTL_RCGC2_R;
-
-    //Set the direction as output (PF1-PF3)
-    GPIO_PORTF_DIR_R = 0x0E;
-
-    //Enable the GPIO pins for digital function (PF1-PF4)
-    GPIO_PORTF_DEN_R = 0x1E;
-
-    //Enable internal pull-up (PF4)
-    //Done to ensure the input pin is pulled to a high level when the button is not pressed
-    GPIO_PORTF_PUR_R = 0x10;
-
-	
-
-//-------------------------------------\|/ TIMER \|/-----------------------------------------------------------
-	
-	
-	// Enable timer peripheral clock
-	SYSCTL_RCGC1_R |= SYSCTL_RCGC1_TIMER0;
-
-	// Disable timer
-	TIMER0_CTL_R &= ~(TIMER_CTL_TAEN);
-	// Enable 32-bit configuration
-	TIMER0_CFG_R = 0x00000000;
-	// Set to Periodic Timer mode, first clear then set
-	TIMER0_TAMR_R &= ~(TIMER_TAMR_TAMR_M);
-	TIMER0_TAMR_R |= TIMER_TAMR_TAMR_PERIOD;
-	// Set Reload value. timeout = 1sek @ F_CPU = 16 Mhz.
-	TIMER0_TAILR_R = 16000000;
-	// Enable timer 0 interrupt
-	TIMER0_IMR_R |= TIMER_IMR_TATOIM;
-
-
-//-------------------------------------\|/ INTERRUPT \|/-----------------------------------------------------------
-	// Vector number 35, Interrupt Number = 19
-	// Clear pending interrupt
-	//NVIC_UNPEND0_R |= NVIC_UNPEND0_INT19;
-	// Set Priority to 0x10, first clear then set.
-	NVIC_PRI4_R &= ~(NVIC_PRI4_INT19_M);
-	NVIC_PRI4_R |= (NVIC_PRI4_INT19_M & (0x10<<NVIC_PRI4_INT19_S));
-	// Enable NVIC interrupt
-	//NVIC_EN0_R |= NVIC_EN0_INT19;
-	// Enable and start timer
-	TIMER0_CTL_R |= TIMER_CTL_TAEN;
-
-
-// Configure the interrupt to trigger on falling edge (button press)
-GPIO_PORTF_IS_R &= ~0x10;     // PF4 is edge-sensitive
-GPIO_PORTF_IBE_R &= ~0x10;    // PF4 is not both edges
-GPIO_PORTF_IEV_R &= ~0x10;    // PF4 falling edge event
-GPIO_PORTF_IM_R |= 0x10;      // Arm interrupt on PF4
-
-// Enable GPIO port F interrupt in the NVIC
-NVIC_EN0_R |= 0x40000000;
-
-// Enable interrupts globally.
-__enable_irq();
-
-	
-//-------------------------------------------------------------------------------------------------------------	
-	
-    int count = 0;
-    int color[] = {0x00,0x08,0x04,0x0C,0x02,0x0A,0x06,0x0E};
-    bool countsUp = true;
-    bool buttonPressed = false;
-
-
-
-    while(1) {
-        //Start timer
-		
-		
-		
-		//Check if button is not pressed.
-        if (GPIO_PORTF_DATA_R & 0x10) {
-            if(buttonPressed){
-
-
-                //Button is pressed
-                buttonPressed = false;
-                            if(countsUp) {
-                                if(count<7) {
-                                    count = count+1;
-                                } else {
-                                    count = 0;
-                                }
-                            } else {
-                                if(count>1) {
-                                    count = count-1;
-                                } else {
-                                    count = 7;
-                                }
-                            }
-			//Delay for debouncing
-			int i=0;
-			for(i =0; i< 1000; i++);
-
-            }
-             //Turns the LED ON.
-            GPIO_PORTF_DATA_R = color[count];
-
-        } else  {
-            buttonPressed = true;
-			
-			//Wait
-
+    while (1)
+    {
+        if (automode_active)
+        {
+            auto_mode();
         }
-		
-    }
-    return(0);
-}
 
+        
+        if (GPIO_PORTF_DATA_R & 0x10)
+        {
+            autotimer = 0;
+        }
+        
+        else
+        {
+            autotimer++;
+            if (autotimer > automode_time)
+            {
+                automode_active = true;
+            }
+        }
+        double_press_timer++;
+    }
+    return 0;
+}

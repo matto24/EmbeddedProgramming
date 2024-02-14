@@ -163,3 +163,1073 @@ Finished building target: "test.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project systick_test1 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../systick.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/systick_test1" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="systick.d_raw"  "../systick.c"
+"../systick.c", line 43: warning #69-D: integer conversion resulted in a change of sign
+"../main.c", line 42: warning #112-D: statement is unreachable
+"../main.c", line 22: warning #552-D: variable "dummy" was set but never used
+Finished building: "../systick.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/systick_test1" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/systick_test1" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "systick_test1.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"systick_test1.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="systick_test1_linkInfo.xml" --rom_model -o "systick_test1.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "systick_test1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 10: error #20: identifier "INT16U" is undefined
+"../main.c", line 14: error #66: expected a ";"
+"../main.c", line 18: error #20: identifier "var2" is undefined
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 15: error #66: expected a ";"
+"../main.c", line 19: error #20: identifier "var2" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 15: error #66: expected a ";"
+"../main.c", line 19: error #20: identifier "var2" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 64: error #138: expression must be a modifiable lvalue
+"../main.c", line 70: warning #112-D: statement is unreachable
+"../main.c", line 29: warning #552-D: variable "iterator" was set but never used
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #112-D: statement is unreachable
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 72: warning #112-D: statement is unreachable
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 53: error #126: expected a "("
+"../main.c", line 66: warning #112-D: statement is unreachable
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 66: warning #112-D: statement is unreachable
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+At end of source: error #68: expected a "}"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 77: warning #112-D: statement is unreachable
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/lab2" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 82: warning #112-D: statement is unreachable
+"../main.c", line 33: warning #552-D: variable "dummy" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "lab2.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2_linkInfo.xml" --rom_model -o "lab2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "lab2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.c", line 35: error #20: identifier "direction_up" is undefined
+"../main.c", line 37: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 48: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 37)
+"../main.c", line 75: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../systick.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="systick.d_raw"  "../systick.c"
+"../systick.c", line 43: warning #69-D: integer conversion resulted in a change of sign
+Finished building: "../systick.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 50: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 40)
+"../main.c", line 77: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 50: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 40)
+"../main.c", line 77: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 60: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 60: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 60: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 60: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 57: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 57: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 57: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 58: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 58: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 86: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 58: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 85: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 46: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 58: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 46)
+"../main.c", line 78: warning #225-D: function "init_systick" declared implicitly
+"../main.c", line 85: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 47: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 61: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 47)
+"../main.c", line 87: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 47: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 61: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 47)
+"../main.c", line 87: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 47: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 61: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 47)
+"../main.c", line 87: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 47: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 61: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 47)
+"../main.c", line 87: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 47: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 61: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 47)
+"../main.c", line 87: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 48: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 62: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 48)
+"../main.c", line 125: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 48: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 62: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 48)
+"../main.c", line 125: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 49: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 63: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 49)
+"../main.c", line 126: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 50: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 64: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 50)
+"../main.c", line 127: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 50: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 64: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 50)
+"../main.c", line 127: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 50: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 64: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 50)
+"../main.c", line 128: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 50: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 64: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 50)
+"../main.c", line 128: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 50: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 64: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 50)
+"../main.c", line 128: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 50: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 64: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 50)
+"../main.c", line 128: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project test ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 51: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 65: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 51)
+"../main.c", line 129: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "test.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"test.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="test_linkInfo.xml" --rom_model -o "test.out" "./main.obj" "./systick.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "test.out"
+ 
+
+**** Build Finished ****
