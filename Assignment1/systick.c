@@ -18,7 +18,7 @@ void systick_handler(void)
 *   Function : See module specification (.h-file).
 *****************************************************************************/
 {
-  // Hardware clears systick int reguest
+  // Hardware clears systick int request
   ticks++;
 }
 

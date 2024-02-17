@@ -3,7 +3,7 @@
  * Embedded Programming (EMP)
  * File:   main.c
  * Author: Daniel, Mads, Valdemar
- * Date: 10/10/2021
+ * Date: 17/02/2024
  * Purpose: To change the color of the LED on the Tiva C Launchpad using the onboard switch
 
 /*************************************Include Files*************************************************/
@@ -68,12 +68,8 @@ void GPIOF_Handler(void)
         {
             direction_up = !direction_up; // Toggle direction
         }
-        else
-        {
-            // CALL FUNCTION TO CHANGE LED
-            LED_Changer();
-        }
 
+//reset timer
         // Delay for debouncing
         int i = 0;
         for (i = 0; i < debouncing_delay_time; i++);
@@ -82,7 +78,7 @@ void GPIOF_Handler(void)
         GPIO_PORTF_ICR_R |= 0x10; // Clear the interrupt flag for PF4
     }
 }
-
+//TIM = 40
 void LED_Changer(void)
 {
     /**************************************************************************************
@@ -114,11 +110,9 @@ void auto_mode(void)
      ***************************************************************************************/
 
     // GPIO_PORTF_DATA_R &= ~(0xFF);
-    while (!ticks)
-        ;
+    while (!ticks);
 
     // Decrement ticks every 5ms.--;
-
     ticks--;
 
     if (!--alive_timer)
@@ -148,7 +142,6 @@ int main(void)
         {
             auto_mode();
         }
-
         
         if (GPIO_PORTF_DATA_R & 0x10)
         {
