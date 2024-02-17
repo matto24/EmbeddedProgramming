@@ -16,7 +16,7 @@
 #define TIM_200_MS 40
 
 /*************************************Constants******************************************/
-const int double_press_time = 300000;
+const int double_press_max_time = 300000;
 const int automode_time = 1000000;
 const int debouncing_delay_time = 400000;
 
@@ -132,7 +132,7 @@ int main(void)
     
     GPIOF_Init(); // Initialize GPIO Port F for button and LED
     init_systick();
-    double_press_timer = double_press_time; // Start at 10000 to make sure it doesn't count the first press as a double press.
+    double_press_timer = double_press_max_time; // Start at 10000 to make sure it doesn't count the first press as a double press.
     int autotimer = 0;
     automode_active = false;
 
@@ -143,20 +143,19 @@ int main(void)
             auto_mode();
         }
         
-        if (GPIO_PORTF_DATA_R & 0x10)
+        if (GPIO_PORTF_DATA_R & 0x10) //When the button is not pressed
         {
-            autotimer = 0;
+            autotimer = 0; //Reset timer for automode
         }
-        
         else
         {
-            autotimer++;
-            if (autotimer > automode_time)
+            autotimer++; //Increment time the button has been held
+            if (autotimer > automode_time) //Auto timer has exceeded limit
             {
                 automode_active = true;
             }
         }
-        double_press_timer++;
+        double_press_timer++; //Track time since last press
     }
     return 0;
 }
