@@ -1,8 +1,13 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:systick_test1,org.eclipse.launchbar.core.descriptorType.default\:lab2,org.eclipse.launchbar.core.descriptorType.default\:test
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:systick_test1,org.eclipse.launchbar.core.descriptorType.default\:lab2,org.eclipse.launchbar.core.descriptorType.default\:lab2d,org.eclipse.launchbar.core.descriptorType.default\:test,org.eclipse.launchbar.core.descriptorType.default\:LAB3,org.eclipse.launchbar.core.descriptorType.default\:assignment2,org.eclipse.launchbar.core.descriptorType.default\:Assignment3,org.eclipse.launchbar.core.descriptorType.default\:assignment3_solution,org.eclipse.launchbar.core.descriptorType.default\:LAB5,org.eclipse.launchbar.core.descriptorType.default\:assignment5
 eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Assignment3/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Assignment3/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:LAB3/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:LAB3/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:assignment2/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:lab2/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:lab2/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:test/activeLaunchMode=run

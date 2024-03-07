@@ -18,7 +18,7 @@
 /*************************************Constants******************************************/
 const int double_press_max_time = 300000;
 const int automode_time = 1000000;
-const int debouncing_delay_time = 400000;
+const int debouncing_delay_time = 400000; 
 
 /*************************************Variables*************************************************/
 int double_press_timer; // The timing between press
@@ -64,10 +64,12 @@ void GPIOF_Handler(void)
         automode_active = false; // Stop automode
 
         // Set direction for double press
-        if (double_press_timer < double_press_time)
+        if (double_press_timer < double_press_max_time)
         {
             direction_up = !direction_up; // Toggle direction
         }
+
+        LED_Changer();  // Change the color of the LED
 
 //reset timer
         // Delay for debouncing

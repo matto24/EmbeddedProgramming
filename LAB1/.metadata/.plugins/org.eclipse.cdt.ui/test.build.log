@@ -6,9 +6,10 @@
 Building file: "../main.c"
 Invoking: Arm Compiler
 "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/test" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
-"../main.c", line 51: warning #225-D: function "LED_Changer" declared implicitly
-"../main.c", line 65: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 51)
-"../main.c", line 129: warning #112-D: statement is unreachable
+"../main.c", line 9: warning #9-D: nested comment is not allowed
+"../main.c", line 72: warning #225-D: function "LED_Changer" declared implicitly
+"../main.c", line 84: warning #161-D: declaration is incompatible with previous "LED_Changer" (declared at line 72)
+"../main.c", line 162: warning #112-D: statement is unreachable
 Finished building: "../main.c"
  
 Building target: "test.out"

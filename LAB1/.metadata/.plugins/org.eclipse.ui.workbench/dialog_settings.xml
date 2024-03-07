@@ -4,4 +4,10 @@
 		<item key="com.ti.ccstudio.system.setup.ui.editors.connectionName" value="Stellaris In-Circuit Debug Interface"/>
 		<item key="com.ti.ccstudio.system.setup.ui.editors.connectionType" value="LM_ICDI"/>
 	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.ti.ccstudio.project.ui.wizards.project.NewCCSProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.ti.common.ui.new"/>
+		</list>
+	</section>
 </section>
