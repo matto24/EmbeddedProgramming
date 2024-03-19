@@ -35,6 +35,7 @@
 /*****************************   Variables   *******************************/
 
 INT8U clock_state = 1;
+
 /*****************************   Functions   *******************************/
 
 
@@ -77,6 +78,7 @@ void receiveIntOverUART(){ // Convert the last digit to a character
 
 void setTime(int timeUnit) {
     if(uart0_rx_rdy()){ // Wait for UART to be ready
+
         INT8U data = uart0_getc();
         clr_LCD();
         put_msg_state(timeUnit, data ); //setting minutes to the data value

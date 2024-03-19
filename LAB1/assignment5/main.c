@@ -24,6 +24,10 @@ int main(void)
 *   Function : Init hardware and then loop forever
 ******************************************************************************/
 {
+  INT8U dataCounter = 0;
+  INT8U initalData = 0;
+
+
   init_systick();
   init_gpio();
   uart0_init(19200, 8, 1, 'n');
@@ -36,8 +40,12 @@ int main(void)
   while(1)
   {
       if(uart0_rx_rdy()) {
-      adjust_rtc_task_serial();
+          adjust_rtc_task_serial();
       }
+
+
+
+
     // System part of the super loop.
     // ------------------------------
     while( !ticks );
