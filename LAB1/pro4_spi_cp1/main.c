@@ -83,7 +83,10 @@ void SPI1_init(void)
     SSI1_CR1_R = 0;          /* disable SPI1 and configure it as a Master */
     SSI1_CC_R = 0;           /* Enable System clock Option */
     SSI1_CPSR_R = 0;         /* Select prescaler value of 0 .i.e 16MHz */
-    SSI1_CR0_R  = 0x00003;     /* 4MHz SPI1 clock, SPI mode 2 (CPOL=1), 4 bit data */
+    SSI1_CR0_R  = 0x00003;     /* 4MHz SPI1 clock, SPI mode 0, 4 bit data */
+    //SSI1_CRO_R = 0x00007; Kan bruges til 8 bit data
+
+    
     SSI1_CR1_R  |= 2;         /* enable SPI1 */
 }
 
