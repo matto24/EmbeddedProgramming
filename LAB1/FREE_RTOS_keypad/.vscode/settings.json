@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "tm4c123gh6pm.h": "c",
+        "stdint.h": "c",
+        "emp_type.h": "c",
+        "lcd.h": "c",
+        "glob_def.h": "c"
+    }
+}
