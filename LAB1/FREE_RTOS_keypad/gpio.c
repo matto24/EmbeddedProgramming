@@ -60,10 +60,17 @@ void init_gpio(void)
   GPIO_PORTF_DEN_R = 0x1F;
 
   //Unlock the GPIO Pin which enables write access to the GPIO
-//  GPIO_PORTF_LOCK_R=0x4C4F434B;
+  GPIO_PORTF_LOCK_R=0x4C4F434B;
   //Commit register (GPIOAFSEL, GPIOPUR, GPIOPDR, GPIODEN)
-  //GPIO_PORTF_CR_R=0xFF;
+  GPIO_PORTF_CR_R=0xFF;
 
+  //Set the direction as output (PF1-PF3)  //0x02 red, 0x04 blue, 0x08 green
+  GPIO_PORTF_DIR_R = 0x0E; // 0b0000 1110 control pins.
+
+  // Enable internal pull-up (PF0 and PF4).
+  GPIO_PORTF_PUR_R = 0x11;
+  //Enable the GPI0 pins for digital function (PF1-PF4)
+  GPIO_PORTF_DEN_R = 0x1F; //switches and LEDs are enabled he
 
 
   // Enable internal pull-up (PF0 and PF4).

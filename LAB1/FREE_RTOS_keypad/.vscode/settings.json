@@ -4,6 +4,9 @@
         "stdint.h": "c",
         "emp_type.h": "c",
         "lcd.h": "c",
-        "glob_def.h": "c"
+        "glob_def.h": "c",
+        "gpio.h": "c",
+        "withdraw.h": "c",
+        "button.h": "c"
     }
 }

@@ -21,9 +21,12 @@
   #define _KEY_H
 
 
+
+
 void init_keypad(void);
 BOOLEAN get_keyboard( INT8U* );
 void keypad_task(void *pvParameters);
 void enter_amount_task(void *pvParameters);
+void enter_pin_task(void *pvParameters);
 
 #endif

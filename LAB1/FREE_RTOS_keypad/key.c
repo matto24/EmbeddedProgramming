@@ -34,6 +34,12 @@ QueueHandle_t xQueueKey;
 /*****************************    Variables   **********************************/
 INT8U my_state = 0;
 INT8U i = 0;
+INT8U first_run = 1;
+INT8U first_run_pin = 1;
+
+INT16U pin_value;
+INT16U tmp_amount = 0;
+
 /*****************************    Defines     ***********************************/
 
 // #define QUEUE_LENGTH 128
@@ -173,44 +179,136 @@ void keypad_task(void *pvParameters)
 
 void enter_amount_task(void *pvParameters)
 {
-  clr_LCD();
-  INT8U enterAmount[] = "Enter amount:";
-  wr_str_LCD(enterAmount);
-  move_LCD(0, 1);
 
-  vTaskDelay(100 / portTICK_RATE_MS);
   while (1)
   {
-    INT8U pislort = 0;
-    if (get_keyboard(&pislort))
+
+    if (getState() == ENTER_AMOUNT)
     {
 
-      if (pislort == '#' || pislort == '*')
+      if (first_run)
       {
+        clr_LCD();
+        INT8U enterAmount[] = "Enter amount:";
+        wr_str_LCD(enterAmount);
+        move_LCD(0, 1);
+        vTaskDelay(100 / portTICK_RATE_MS);
+        first_run = 0;
       }
-      else
+
+      INT8U pislort = 0;
+
+      if (get_keyboard(&pislort))
       {
 
-        xQueueSend(xQueueLCD, &pislort, portMAX_DELAY);
-
-        switch (i)
+        if (pislort == '#' || pislort == '*')
         {
-        case 0:
-          amount = (pislort - ASCII_TO_INT) * 1000;
-          break;
-        case 1:
-          amount = amount + (pislort - ASCII_TO_INT) * 100;
-          break;
-        case 2:
-          amount = amount + (pislort - ASCII_TO_INT) * 10;
-          break;
-        case 3:
-          amount = amount + (pislort - ASCII_TO_INT);
-          i = 0;
-          isFull = 1;
-          break;
         }
-        i++;
+        else
+        {
+          if (i < 4)
+          {
+            xQueueSend(xQueueLCD, &pislort, portMAX_DELAY);
+          }
+
+          switch (i)
+          {
+          case 0:
+            tmp_amount = (pislort - ASCII_TO_INT) * 1000;
+            break;
+          case 1:
+            tmp_amount = tmp_amount + (pislort - ASCII_TO_INT) * 100;
+            break;
+          case 2:
+            tmp_amount = tmp_amount + (pislort - ASCII_TO_INT) * 10;
+            break;
+          case 3:
+            tmp_amount = tmp_amount + (pislort - ASCII_TO_INT);
+            setAmount(tmp_amount);
+            isFull = 1;
+            break;
+          default:
+            break;
+          }
+          i++;
+        }
+      }
+    }
+  }
+}
+
+void enter_pin_task(void *pvParameters)
+{
+
+  while (1)
+  {
+    if (getState() == ENTER_PIN)
+    {
+
+      if (first_run_pin)
+      {
+        i = 0;
+        // xQueueReset(xQueueKey);
+        pin_value = 0;
+        clr_LCD();
+        vTaskDelay(50 / portTICK_RATE_MS);
+        INT8U enterPin[] = "Enter Pin:";
+        wr_str_LCD(enterPin);
+        move_LCD(0, 1);
+        vTaskDelay(100 / portTICK_RATE_MS);
+        first_run_pin = 0;
+      }
+
+      INT8U pin_key = 0;
+
+      if (get_keyboard(&pin_key))
+      {
+
+        if (pin_key == '#' || pin_key == '*')
+        {
+        }
+        else
+        {
+          if (i < 4)
+          {
+            xQueueSend(xQueueLCD, &pin_key, portMAX_DELAY);
+          }
+
+          else
+          // if (i == 3)
+          {
+
+            if (!(pin_value % 8))
+            {
+              pin_correct = 1;
+            }
+            else
+            {
+              first_run_pin = 1;
+              // CRASH
+            }
+          }
+
+          switch (i)
+          {
+          case 0:
+            pin_value = (pin_key - ASCII_TO_INT) * 1000;
+            break;
+          case 1:
+            pin_value = pin_value + (pin_key - ASCII_TO_INT) * 100;
+            break;
+          case 2:
+            pin_value = pin_value + (pin_key - ASCII_TO_INT) * 10;
+            break;
+          case 3:
+            pin_value = pin_value + (pin_key - ASCII_TO_INT);
+
+            break;
+          default:
+            break;
+          }
+          i++;
+        }
       }
     }
   }

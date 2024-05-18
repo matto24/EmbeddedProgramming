@@ -15,6 +15,11 @@
 #include "fsm.h"
 #include "status_led.h"
 #include "semphr.h"
+#include "withdraw.h"
+#include "button.h"
+#include "fsm.h"
+#include "rotary.h"
+#include "adc.h"
 
 #define USERTASK_STACK_SIZE configMINIMAL_STACK_SIZE
 #define IDLE_PRIO 0
@@ -42,17 +47,29 @@ static void setupHardware(void)
   init_keypad();
   initLCD();
   status_led_init();
+  init_buttons();
+  init_fsm();
+  init_rotary();
+  init_adc();
 }
 
 int main(void)
 {
   setupHardware();
+          // BACKBONE TASKS
   xTaskCreate(keypad_task, "KEYPAD", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
   xTaskCreate(lcd_task, "LCD", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
  // xTaskCreate(status_led_task, "STAUS_LED", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
-  
   xTaskCreate(fsm_task, "FSM", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
-  xTaskCreate(enter_amount_task, "ENTER_AMOUNT_TASK", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
+
+          // State TASKS
+  xTaskCreate( enter_amount_task, "ENTER_AMOUNT_TASK", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL );
+  xTaskCreate( enter_pin_task, "ENTER PIN", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL );
+  xTaskCreate( withdraw_task, "withdraw", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL );
+  xTaskCreate(rotary_task, "ROTARY TASK", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
+  xTaskCreate(rotary_pressed_task, "LED BLINKING TASK", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
+  
+          // RTOS SCHEDULER
   vTaskStartScheduler();
   return 0;
 }
