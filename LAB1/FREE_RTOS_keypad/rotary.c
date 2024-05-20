@@ -118,7 +118,6 @@ void GPIOA_Handler(void)
 
     if (GPIO_PORTA_RIS_R & PA7) // Check if interrupt was caused by PA7 (rotary press)
     {
-        xSemaphoreGiveFromISR(xRotaryPressSemaphore, NULL); 
         rotary_pressed = 1;
         set_rotary_complete();
 
@@ -219,9 +218,6 @@ void rotary_pressed_task(void *pvParameters)
                 first_run_withdrawal = 0;
             }
 
-            // if (xSemaphoreTake(xRotaryPressSemaphore, portMAX_DELAY) == pdTRUE)
-            //{
-            // }
             if (is_final_selected)
             {
                 switch (final_rot_value)
