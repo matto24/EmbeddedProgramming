@@ -184,7 +184,6 @@ void rotary_task(void *pvParameters)
                     }
                     move_LCD(0, 1);
                     wr_banknote_str(rotary_value);
-                    // GPIO_PORTF_DATA_R = (rotary_value+1)*2;
                     vTaskDelay(100 / portTICK_RATE_MS);
 
                     xSemaphoreGive(xRotaryValueMutex);
