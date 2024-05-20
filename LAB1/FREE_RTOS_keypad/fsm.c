@@ -3,11 +3,8 @@
 #include "emp_type.h"
 #include "fsm.h"
 #include "lcd.h"
-#include "button.h"
 #include "key.h"
 #include "withdraw.h"
-
-// boolean isValidAmount
 
 state current_state = ENTER_AMOUNT;
 
@@ -17,16 +14,14 @@ SemaphoreHandle_t xWithdrawAmountMutex;
 SemaphoreHandle_t xRotaryCompleteMutex;
 extern QueueHandle_t xQueueLCD;
 
-
 // void suspendAllTasks
 INT16U amount = 0;
 INT16U withdraw_amount = 0;
 
-BOOLEAN isFull = 0;
+BOOLEAN amount_set = 0;
 BOOLEAN pin_correct = 0;
 INT8U rotary_complete = 0;
 INT8U rotary_test = 0;
-
 
 state getState()
 {
@@ -37,6 +32,15 @@ state getState()
         xSemaphoreGive(xStateMutex);
     }
     return outp;
+}
+
+void setState(state value)
+{
+    if (xSemaphoreTake(xStateMutex, portMAX_DELAY) == pdTRUE)
+    {
+        current_state = value;
+        xSemaphoreGive(xStateMutex);
+    }
 }
 
 INT16U getAmount()
@@ -66,7 +70,6 @@ INT16U getWithdrawAmount()
     INT16U value;
     if (xSemaphoreTake(xWithdrawAmountMutex, portMAX_DELAY) == pdTRUE)
     {
-
         value = amount;
         xSemaphoreGive(xWithdrawAmountMutex);
     }
@@ -103,7 +106,6 @@ INT8U get_rotary_complete()
     return outp;
 }
 
-
 void init_fsm(void)
 {
     xStateMutex = xSemaphoreCreateMutex();
@@ -122,9 +124,9 @@ void fsm_task(void *pvParameters) // task manager
         {
         case ENTER_AMOUNT:
 
-            if (isFull && button_pushed())
+            if (amount_set)
             {
-                current_state = ENTER_PIN;
+                setState(ENTER_PIN);
             }
 
             break;
@@ -134,31 +136,31 @@ void fsm_task(void *pvParameters) // task manager
 
             if (pin_correct)
             {
-                current_state = CHOOSE_WITHDRAW_AMOUNT;
+                setState(CHOOSE_WITHDRAW_AMOUNT);
             }
 
             break;
 
         case CHOOSE_WITHDRAW_AMOUNT:
-            if (done)
+            if (withdraw_chosen)
             {
-                current_state = CHOOSE_BANKNOTE;
+                setState(CHOOSE_BANKNOTE);
             }
             break;
 
         case CHOOSE_BANKNOTE:
-            //rotary_test = rotary_complete + 48;
-            //xQueueSend(xQueueLCD, &rotary_test, portMAX_DELAY);
+            // rotary_test = rotary_complete + 48;
+            // xQueueSend(xQueueLCD, &rotary_test, portMAX_DELAY);
             vTaskDelay(50 / portTICK_RATE_MS);
             if (get_rotary_complete())
             {
-                current_state = WITHDRAWAL;
+                setState(WITHDRAWAL);
             }
 
             break;
 
         case WITHDRAWAL:
-            //clr_LCD();
+            // clr_LCD();
             break;
 
         default:

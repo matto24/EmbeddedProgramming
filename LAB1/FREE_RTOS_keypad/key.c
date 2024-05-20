@@ -26,6 +26,7 @@
 #include "queue.h"
 #include "lcd.h"
 #include "fsm.h"
+#include "button.h"
 
 /*****************************    Queues    **********************************/
 
@@ -34,9 +35,9 @@ QueueHandle_t xQueueKey;
 /*****************************    Variables   **********************************/
 INT8U my_state = 0;
 INT8U i = 0;
+INT8U j = 0;
 INT8U first_run = 1;
 INT8U first_run_pin = 1;
-
 INT16U pin_value;
 INT16U tmp_amount = 0;
 
@@ -167,9 +168,9 @@ void keypad_task(void *pvParameters)
 
         vTaskDelay(50 / portTICK_RATE_MS);
 
-        // if (get_keyboard(&pislort))
+        // if (get_keyboard(&key_press))
         // {
-        //   xQueueSend(xQueueLCD, &pislort, portMAX_DELAY);
+        //   xQueueSend(xQueueLCD, &key_press, portMAX_DELAY);
         // }
       }
       break;
@@ -189,49 +190,52 @@ void enter_amount_task(void *pvParameters)
       if (first_run)
       {
         clr_LCD();
-        INT8U enterAmount[] = "Enter amount:";
-        wr_str_LCD(enterAmount);
+        INT8U enter_amount[] = "Enter amount:";
+        wr_str_LCD(enter_amount);
         move_LCD(0, 1);
         vTaskDelay(100 / portTICK_RATE_MS);
         first_run = 0;
       }
 
-      INT8U pislort = 0;
+      INT8U key_press = 0;
 
-      if (get_keyboard(&pislort))
+      if (get_keyboard(&key_press))
       {
 
-        if (pislort == '#' || pislort == '*')
+        if (key_press == '#' || key_press == '*')
         {
         }
         else
         {
           if (i < 4)
           {
-            xQueueSend(xQueueLCD, &pislort, portMAX_DELAY);
-          }
-
-          switch (i)
-          {
-          case 0:
-            tmp_amount = (pislort - ASCII_TO_INT) * 1000;
-            break;
-          case 1:
-            tmp_amount = tmp_amount + (pislort - ASCII_TO_INT) * 100;
-            break;
-          case 2:
-            tmp_amount = tmp_amount + (pislort - ASCII_TO_INT) * 10;
-            break;
-          case 3:
-            tmp_amount = tmp_amount + (pislort - ASCII_TO_INT);
-            setAmount(tmp_amount);
-            isFull = 1;
-            break;
-          default:
-            break;
+            xQueueSend(xQueueLCD, &key_press, portMAX_DELAY);
+            switch (i)
+            {
+            case 0:
+              tmp_amount = (key_press - ASCII_TO_INT) * 1000;
+              break;
+            case 1:
+              tmp_amount = tmp_amount + (key_press - ASCII_TO_INT) * 100;
+              break;
+            case 2:
+              tmp_amount = tmp_amount + (key_press - ASCII_TO_INT) * 10;
+              break;
+            case 3:
+              tmp_amount = tmp_amount + (key_press - ASCII_TO_INT);
+              setAmount(tmp_amount);
+              break;
+            default:
+              break;
+            }
           }
           i++;
         }
+      }
+
+      if (button_pushed() && i > 3)
+      {
+          amount_set = 1;
       }
     }
   }
@@ -247,7 +251,7 @@ void enter_pin_task(void *pvParameters)
 
       if (first_run_pin)
       {
-        i = 0;
+        j = 0;
         // xQueueReset(xQueueKey);
         pin_value = 0;
         clr_LCD();
@@ -269,27 +273,31 @@ void enter_pin_task(void *pvParameters)
         }
         else
         {
-          if (i < 4)
+          if (j < 4)
           {
             xQueueSend(xQueueLCD, &pin_key, portMAX_DELAY);
           }
 
-          else
-          // if (i == 3)
+          
+          if (j == 3)
           {
 
             if (!(pin_value % 8))
             {
+              vTaskDelay(500 / portTICK_RATE_MS);
               pin_correct = 1;
             }
             else
             {
+              vTaskDelay(500 / portTICK_RATE_MS);
               first_run_pin = 1;
-              // CRASH
+              j=0;
+              //clear LCD queue
+              xQueueReset(xQueueLCD);
             }
           }
 
-          switch (i)
+          switch (j)
           {
           case 0:
             pin_value = (pin_key - ASCII_TO_INT) * 1000;
@@ -307,7 +315,7 @@ void enter_pin_task(void *pvParameters)
           default:
             break;
           }
-          i++;
+          j++;
         }
       }
     }

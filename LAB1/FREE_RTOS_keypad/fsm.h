@@ -32,7 +32,7 @@
 // ------------------------
 
 extern INT16U amount;
-extern BOOLEAN isFull;
+extern BOOLEAN amount_set;
 extern INT16U withdraw_amount;
 
 extern BOOLEAN pin_correct;

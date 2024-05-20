@@ -52,8 +52,8 @@ QueueHandle_t xQueueLCD;
 INT8U first_run_withdraw = 1;
 
 INT8U num = 3;
-INT8U numberArr[4][3] = {"50 ", "100 ", "200", "500"};
-INT16U withdrawValue[4] = {50, 100, 200, 500};
+INT8U number_arr[4][3] = {"50 ", "100 ", "200", "500"};
+INT16U withdraw_value[4] = {50, 100, 200, 500};
 
 /*****************************   Functions   *******************************/
 
@@ -63,7 +63,7 @@ void wr_withdraw_str()
   for (i = 0; i < 3;)
   {
 
-    xQueueSend(xQueueLCD, &numberArr[num][i], portMAX_DELAY);
+    xQueueSend(xQueueLCD, &number_arr[num][i], portMAX_DELAY);
 
     i++;
   }
@@ -81,7 +81,7 @@ void withdraw_task(void *pvParameters)
       {
         clr_LCD();
         set_cursor(0x0C);
-        BOOLEAN done = FALSE;
+        BOOLEAN withdraw_chosen = FALSE;
         INT8U withdraw[] = "Withdraw Amount:";
         wr_str_LCD(withdraw);
         move_LCD(0, 1);
@@ -106,10 +106,10 @@ void withdraw_task(void *pvParameters)
 
         break;
       case BE_DOUBBLE_PUSH: // if the event is a double push
-        if (withdrawValue[num] < getAmount())
+        if (withdraw_value[num] < getAmount())
         {
-          setWithdrawAmount(withdrawValue[num]);
-          done = TRUE;
+          setWithdrawAmount(withdraw_value[num]);
+          withdraw_chosen = TRUE;
         }
         else
         {

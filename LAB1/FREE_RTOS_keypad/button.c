@@ -26,7 +26,6 @@
 #include "swtimers.h"
 #include "tmodel.h"
 #include "messages.h"
-#include "lcd.h"
 /*****************************    Defines    *******************************/
 #define BS_IDLE           0
 #define BS_FIRST_PUSH     1
@@ -83,7 +82,7 @@ void check_button2()
         if( !button2_pushed() )                                         // if button released before the timer runs out it was a normal push
         {
             button2_state = BS_FIRST_RELEASE;
-            start_swtimer( ST_BUTTON2, SEB_TO_BUTTON2, MILLISEC(400) );   // we set a new timer to see if the button is pressed again shortly after (double push)
+            start_swtimer( ST_BUTTON2, SEB_TO_BUTTON2, MILLISEC(50) );   // we set a new timer to see if the button is pressed again shortly after (double push)
         }
 
         break;

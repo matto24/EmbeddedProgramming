@@ -45,16 +45,16 @@
 
 /*****************************   Constants   *******************************/
 
-INT8U bankNote[3][3] = {"100", "50 ", "10 "};
+INT8U bank_note[3][3] = {"100", "50 ", "10 "};
+INT8U bank_note_int[3] = {100, 50, 10};
 
 /*****************************   Variables   *******************************/
 
 QueueHandle_t xQueueLCD;
 
 INT8U rotary_dir = CW;
-volatile INT8U rotary_pressed_flag = 0;
 
-volatile INT8U rotaryValue = 0;
+volatile INT8U rotary_value = 0;
 SemaphoreHandle_t xRotaryValueMutex;
 
 SemaphoreHandle_t xRotaryDirectionSemaphore;
@@ -67,13 +67,15 @@ INT8U first_run_banknote = 1;
 INT8U is_final_selected = 0;
 INT8U first_run_withdrawal = 1;
 
+volatile INT8U rotary_pressed = 0;
+
 /*****************************   Functions   *******************************/
 void wr_banknote_str(INT8U num)
 {
     INT8U i;
     for (i = 0; i < 3;)
     {
-        xQueueSend(xQueueLCD, &bankNote[num][i], portMAX_DELAY);
+        xQueueSend(xQueueLCD, &bank_note[num][i], portMAX_DELAY);
         i++;
     }
 }
@@ -116,12 +118,13 @@ void GPIOA_Handler(void)
 
     if (GPIO_PORTA_RIS_R & PA7) // Check if interrupt was caused by PA7 (rotary press)
     {
-        rotary_pressed_flag ^= 1;                           // Toggle on press
         xSemaphoreGiveFromISR(xRotaryPressSemaphore, NULL); // Null bliver vigtig hvis vi får tasks med højere prioritet
+        rotary_pressed = 1;
         set_rotary_complete();
+
         GPIO_PORTA_ICR_R |= PA7; // clear interrupt flag
     }
-    else if (GPIO_PORTA_RIS_R & PA5 && !rotary_pressed_flag) // Check if interrupt was caused by PA5
+    else if (GPIO_PORTA_RIS_R & PA5 && !rotary_pressed) // Check if interrupt was caused by PA5
     {
         rotary_dir = ((GPIO_PORTA_DATA_R & (1 << 6)) != 0) ? CW : CCW; // if PA6 is high => CW, PA6 is low => CCW
         xSemaphoreGiveFromISR(xRotaryDirectionSemaphore, NULL);
@@ -140,7 +143,7 @@ INT8U getRotaryValue(void)
     INT8U outp;
     if (xSemaphoreTake(xRotaryValueMutex, portMAX_DELAY) == pdTRUE)
     {
-        outp = rotaryValue;
+        outp = rotary_value;
         xSemaphoreGive(xRotaryValueMutex);
     }
     return outp;
@@ -164,7 +167,7 @@ void rotary_task(void *pvParameters)
                 INT8U banknote_text[] = "Choose banknote:";
                 wr_str_LCD(banknote_text);
                 move_LCD(0, 1);
-                wr_banknote_str(rotaryValue);
+                wr_banknote_str(rotary_value);
                 first_run_banknote = 0;
             }
 
@@ -174,15 +177,17 @@ void rotary_task(void *pvParameters)
                 {
                     if (rotary_dir == CW)
                     {
-                        rotaryValue = (rotaryValue + 1) % 3;
+                        rotary_value = (rotary_value + 1) % 3;
                     }
                     else
                     {
-                        rotaryValue = (rotaryValue - 1 + 3) % 3;
+                        rotary_value = (rotary_value - 1 + 3) % 3;
                     }
                     move_LCD(0, 1);
-                    wr_banknote_str(rotaryValue);
-                    // GPIO_PORTF_DATA_R = (rotaryValue+1)*2;
+                    wr_banknote_str(rotary_value);
+                    // GPIO_PORTF_DATA_R = (rotary_value+1)*2;
+                    vTaskDelay(100 / portTICK_RATE_MS);
+
                     xSemaphoreGive(xRotaryValueMutex);
                 }
             }
@@ -204,9 +209,9 @@ void rotary_pressed_task(void *pvParameters)
             {
                 clr_LCD();
                 set_cursor(0x0C);
-                INT8U withdraw_text[] = "PIS LORT";
+                INT8U withdraw_text[] = "Printing money";
                 wr_str_LCD(withdraw_text);
-                
+
                 final_rot_value = getRotaryValue();
                 GPIO_PORTF_DATA_R = 0x0E;
 

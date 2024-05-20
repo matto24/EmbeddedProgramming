@@ -21973,3 +21973,1344 @@ Finished building target: "FREE_RTOS_keypad.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'main.obj' failed
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../main.c", line 16: fatal error #1965: cannot open source file "status_led.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../adc.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="adc.d_raw"  "../adc.c"
+Finished building: "../adc.c"
+ 
+Building file: "../button.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="button.d_raw"  "../button.c"
+"../button.c", line 122: warning #552-D: variable "time_out" was set but never used
+Finished building: "../button.c"
+ 
+Building file: "../fsm.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="fsm.d_raw"  "../fsm.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+Finished building: "../fsm.c"
+ 
+Building file: "../withdraw.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="withdraw.d_raw"  "../withdraw.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../withdraw.c", line 55: warning #2097-D: string literal too long -- excess characters ignored
+"../withdraw.c", line 82: warning #225-D: function "clr_LCD" declared implicitly
+"../withdraw.c", line 84: warning #179-D: variable "withdraw_chosen" was declared but never referenced
+"../withdraw.c", line 116: warning #225-D: function "clr_LCD" declared implicitly
+Finished building: "../withdraw.c"
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 83: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 162: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 163: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 165: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 166: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 183: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 206: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 208: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 254: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 316: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../main.c", line 48: warning #225-D: function "status_led_init" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined       first referenced
+  symbol             in file     
+ ---------       ----------------
+ status_led_init ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "FREE_RTOS_keypad.out" not built
+ 
+>> Compilation failure
+makefile:151: recipe for target 'FREE_RTOS_keypad.out' failed
+gmake[1]: *** [FREE_RTOS_keypad.out] Error 1
+gmake: *** [all] Error 2
+makefile:147: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+Finished building: "../main.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 259: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 321: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 259: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 321: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 257: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 319: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 83: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 162: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 163: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 165: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 166: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 183: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 206: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 208: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 191: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 256: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 318: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../fsm.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="fsm.d_raw"  "../fsm.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+Finished building: "../fsm.c"
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 83: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 127: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 129: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 173: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 174: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 176: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 177: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 194: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 216: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 217: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 219: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+gmake[1]: 'FREE_RTOS_keypad.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 128: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 130: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 174: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 175: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 177: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 178: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 195: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 217: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 218: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 220: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 130: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 132: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 176: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 177: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 179: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 180: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 197: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 219: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 220: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 222: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 131: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 133: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 177: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 178: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 180: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 181: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 198: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 220: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 221: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 223: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 126: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 132: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 134: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 178: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 179: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 181: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 182: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 199: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 221: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 222: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 224: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 127: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 133: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 135: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 179: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 180: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 182: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 183: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 200: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 222: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 223: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 225: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 127: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 133: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 135: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 179: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 180: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 182: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 183: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 200: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 222: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 223: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 225: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 127: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 129: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 135: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 137: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 181: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 182: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 184: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 185: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 202: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 224: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 225: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 227: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 127: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 129: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 136: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 138: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 140: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 184: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 185: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 188: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 227: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 228: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 230: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 84: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 125: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 127: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 129: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 136: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 138: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 140: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 184: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 185: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 188: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 227: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 228: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 230: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 203: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "MOVE_LCD" declared implicitly
+"../rotary.c", line 207: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 228: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 229: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 231: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ MOVE_LCD  ./rotary.obj    
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "FREE_RTOS_keypad.out" not built
+ 
+>> Compilation failure
+makefile:151: recipe for target 'FREE_RTOS_keypad.out' failed
+gmake[1]: *** [FREE_RTOS_keypad.out] Error 1
+makefile:147: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 203: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 207: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 228: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 229: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 231: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 203: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 207: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 228: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 229: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 231: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 203: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 207: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 228: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 229: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 231: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 167: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 168: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 171: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 188: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 200: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 202: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 204: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 211: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 213: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 215: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 235: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 236: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 238: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 167: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 168: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 171: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 188: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 201: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 203: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 205: warning #225-D: function "wr_ch_LCD" declared implicitly
+"../rotary.c", line 212: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 214: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 216: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 236: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 237: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 239: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 167: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 168: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 171: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 188: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 236: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 237: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 239: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 234: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 235: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 237: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 209: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 212: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 191: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 256: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 319: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 191: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 256: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 319: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 191: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 256: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 319: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 191: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 256: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 320: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 257: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 321: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 257: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 321: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 257: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 323: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 257: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 323: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../button.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="button.d_raw"  "../button.c"
+"../button.c", line 122: warning #552-D: variable "time_out" was set but never used
+Finished building: "../button.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../button.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="button.d_raw"  "../button.c"
+"../button.c", line 122: warning #552-D: variable "time_out" was set but never used
+Finished building: "../button.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../button.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="button.d_raw"  "../button.c"
+"../button.c", line 122: warning #552-D: variable "time_out" was set but never used
+Finished building: "../button.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../button.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="button.d_raw"  "../button.c"
+"../button.c", line 122: warning #552-D: variable "time_out" was set but never used
+Finished building: "../button.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 86: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 209: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 212: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 85: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 166: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 170: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 187: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 209: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 212: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 85: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 165: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 166: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 168: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 186: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 211: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 213: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 85: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 163: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 164: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 166: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 167: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 184: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 209: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 212: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 85: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 165: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 166: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 168: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 186: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 211: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 213: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'key.obj' failed
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 238: error #20: identifier "amount_set" is undefined
+"../key.c", line 257: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 323: warning #1-D: last line of file ends without a newline
+1 error detected in the compilation of "../key.c".
+gmake: *** [key.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+Finished building: "../main.c"
+ 
+Building file: "../withdraw.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="withdraw.d_raw"  "../withdraw.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../withdraw.c", line 55: warning #2097-D: string literal too long -- excess characters ignored
+"../withdraw.c", line 82: warning #225-D: function "clr_LCD" declared implicitly
+"../withdraw.c", line 84: warning #179-D: variable "withdraw_chosen" was declared but never referenced
+"../withdraw.c", line 116: warning #225-D: function "clr_LCD" declared implicitly
+Finished building: "../withdraw.c"
+ 
+Building file: "../fsm.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="fsm.d_raw"  "../fsm.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+Finished building: "../fsm.c"
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 85: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 165: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 166: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 168: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 186: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 211: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 213: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project FREE_RTOS_keypad ****
+
+/home/mads/ti/ccs1260/ccs/utils/bin/gmake -k -j 20 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+Finished building: "../main.c"
+ 
+Building file: "../withdraw.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="withdraw.d_raw"  "../withdraw.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../withdraw.c", line 55: warning #2097-D: string literal too long -- excess characters ignored
+"../withdraw.c", line 82: warning #225-D: function "clr_LCD" declared implicitly
+"../withdraw.c", line 84: warning #179-D: variable "withdraw_chosen" was declared but never referenced
+"../withdraw.c", line 116: warning #225-D: function "clr_LCD" declared implicitly
+Finished building: "../withdraw.c"
+ 
+Building file: "../fsm.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="fsm.d_raw"  "../fsm.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+Finished building: "../fsm.c"
+ 
+Building file: "../rotary.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="rotary.d_raw"  "../rotary.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../rotary.c", line 85: warning #552-D: variable "dummy" was set but never used
+"../rotary.c", line 165: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 166: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 168: warning #225-D: function "wr_str_LCD" declared implicitly
+"../rotary.c", line 169: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 186: warning #225-D: function "move_LCD" declared implicitly
+"../rotary.c", line 210: warning #225-D: function "clr_LCD" declared implicitly
+"../rotary.c", line 211: warning #225-D: function "set_cursor" declared implicitly
+"../rotary.c", line 213: warning #225-D: function "wr_str_LCD" declared implicitly
+Finished building: "../rotary.c"
+ 
+Building file: "../key.c"
+Invoking: Arm Compiler
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/FREE_RTOS_keypad" --include_path="/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/inc" --include_path="/home/mads/Documents/4.semester/indlejretProgrammering/LAB1/frt10/port/TivaM4" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="key.d_raw"  "../key.c"
+"../glob_def.h", line 29: warning #48-D: incompatible redefinition of macro "NULL" (declared at line 53 of "/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stddef.h")
+"../key.c", line 192: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 257: warning #225-D: function "clr_LCD" declared implicitly
+"../key.c", line 323: warning #1-D: last line of file ends without a newline
+Finished building: "../key.c"
+ 
+Building target: "FREE_RTOS_keypad.out"
+Invoking: Arm Linker
+"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FREE_RTOS_keypad.map" --heap_size=0 --stack_size=512 -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"/home/mads/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FREE_RTOS_keypad_linkInfo.xml" --rom_model -o "FREE_RTOS_keypad.out" "./adc.obj" "./button.obj" "./fsm.obj" "./gpio.obj" "./heap_2.obj" "./key.obj" "./lcd.obj" "./list.obj" "./main.obj" "./messages.obj" "./port.obj" "./portasm.obj" "./queue.obj" "./rotary.obj" "./startup_frt.obj" "./swtimers.obj" "./systick_frt.obj" "./tasks.obj" "./withdraw.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FREE_RTOS_keypad.out"
+ 
+
+**** Build Finished ****

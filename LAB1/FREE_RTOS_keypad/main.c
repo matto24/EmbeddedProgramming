@@ -13,7 +13,6 @@
 #include "key.h"
 #include "lcd.h"
 #include "fsm.h"
-#include "status_led.h"
 #include "semphr.h"
 #include "withdraw.h"
 #include "button.h"
@@ -46,7 +45,6 @@ static void setupHardware(void)
   init_gpio();
   init_keypad();
   initLCD();
-  status_led_init();
   init_buttons();
   init_fsm();
   init_rotary();
@@ -59,7 +57,6 @@ int main(void)
           // BACKBONE TASKS
   xTaskCreate(keypad_task, "KEYPAD", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
   xTaskCreate(lcd_task, "LCD", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
- // xTaskCreate(status_led_task, "STAUS_LED", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
   xTaskCreate(fsm_task, "FSM", USERTASK_STACK_SIZE, NULL, LOW_PRIO, NULL);
 
           // State TASKS
