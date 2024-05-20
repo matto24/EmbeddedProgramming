@@ -284,7 +284,7 @@ void enter_pin_task(void *pvParameters)
 
             if (!(pin_value % 8))
             {
-              vTaskDelay(500 / portTICK_RATE_MS);
+              vTaskDelay(200 / portTICK_RATE_MS);
               pin_correct = 1;
             }
             else
