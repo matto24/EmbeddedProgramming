@@ -24,7 +24,6 @@
 #include "events.h"
 #include "button.h"
 #include "swtimers.h"
-#include "tmodel.h"
 #include "messages.h"
 /*****************************    Defines    *******************************/
 #define BS_IDLE           0
@@ -119,9 +118,6 @@ void check_button()
 {
   swt_ctrl();
   static INT8U  button_state = BS_IDLE;
-         INT8U  time_out;
-
-  time_out = get_msg_event( SEB_TO_BUTTON );
 
   switch( button_state )
   {

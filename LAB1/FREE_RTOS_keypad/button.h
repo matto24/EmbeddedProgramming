@@ -24,7 +24,16 @@
 
 /*****************************    Defines    *******************************/
 
+// Shared Event Buffers.
+// ---------------------
+#define SEB_BUTTON_EVENT 40
+#define SEB_BUTTON2_EVENT 41
+#define SEB_TO_BUTTON2 43 // Time Out
 
+
+// Software Timers.
+// ----------------
+#define ST_BUTTON2   4
 /*****************************   Constants   *******************************/
 
 /*****************************   Functions   *******************************/

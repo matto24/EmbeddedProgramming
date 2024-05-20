@@ -34,7 +34,6 @@
 #include "button.h"
 #include "messages.h"
 #include "events.h"
-#include "tmodel.h"
 #include "lcd.h"
 #include "fsm.h"
 
