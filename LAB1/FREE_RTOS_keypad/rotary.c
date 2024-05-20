@@ -118,7 +118,7 @@ void GPIOA_Handler(void)
 
     if (GPIO_PORTA_RIS_R & PA7) // Check if interrupt was caused by PA7 (rotary press)
     {
-        xSemaphoreGiveFromISR(xRotaryPressSemaphore, NULL); // Null bliver vigtig hvis vi får tasks med højere prioritet
+        xSemaphoreGiveFromISR(xRotaryPressSemaphore, NULL); 
         rotary_pressed = 1;
         set_rotary_complete();
 
