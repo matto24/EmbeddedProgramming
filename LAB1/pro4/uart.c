@@ -6,7 +6,7 @@
 
 
 #define PIOSC_clock 16000000                                    //Precision Internal Oscillator
-#define BAUDRATE 115200
+#define BAUDRATE 9600
 
 #define PORTA_RUN_MODE_EN 0x01
 #define PORTA_PA0_RX 0x01
@@ -52,7 +52,7 @@ void init_uart(){
 //    UART0_FBRD_R = 44;  //(int)(BDR_float * 64 + 0.5);                             // Fractional del af BRD
 
     //change in baudrate registers must be followed by a write to LCRH
-    UART0_LCRH_R = DATA_LENGTH_AND_NONPARITY_FIFO;                          // Konfigurer frame: 8 data bits, ingen parity, 1 stop bit, fifo enabled  // page 914
+    UART0_LCRH_R = DATA_LENGTH_AND_NONPARITY;                          // Konfigurer frame: 8 data bits, ingen parity, 1 stop bit, fifo disabled  // page 914
 
     UART0_CC_R |= UART_CLOCK_SELECT_INTERN;                                 // Bruger PIOSC 16MHz clock  page 937
 
@@ -73,10 +73,15 @@ void UART0_SendChar(INT8U data){
 char UART0_ReceiveChar(){
 
     while( UART0_FR_R & UART_FR_RXFE );                                     // Vent indtil RX FIFO ikke er tom
-    return UART0_DR_R;                                                      // L�s og returner data fra data registeret
+    return UART0_DR_R;                                                      // Lï¿½s og returner data fra data registeret
 }
 
 
+void UART0_ClearReceiveBuffer() {
+    while(!(UART0_FR_R & UART_FR_RXFE)) { // Tjek om receive FIFO ikke er tom
+        (void)UART0_DR_R; // Læs UART data registeret for at rydde bufferen
+    }
+}
 
 
 
@@ -87,7 +92,7 @@ void UART0_SendInt16(INT16U data){
 
 void UART0_SendInt32(INT32U data){
     unsigned char *ptr, i;
-    ptr = (unsigned char *)&data;                       //pointer til f�rste adresse for float
+    ptr = (unsigned char *)&data;                       //pointer til fï¿½rste adresse for float
     for (i = 0; i < sizeof(INT32U); i++){
         UART0_SendChar(*(ptr + i));                     //sender byten fra 1 til 4 addrese
     }
@@ -95,7 +100,7 @@ void UART0_SendInt32(INT32U data){
 
 void UART0_SendFloat(FP32 data){
     unsigned char *ptr, i;
-    ptr = (unsigned char *)&data;                       //pointer til f�rste adresse for float
+    ptr = (unsigned char *)&data;                       //pointer til fï¿½rste adresse for float
     for (i = 0; i < sizeof(FP32); i++){
         UART0_SendChar(*(ptr + i));                     //sender byten fra 1 til 4 addrese
     }

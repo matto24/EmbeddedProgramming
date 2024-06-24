@@ -32,6 +32,7 @@ char UART0_ReceiveChar();
 *   Function : recives data from UART
 ******************************************************************************/
 
+void UART0_ClearReceiveBuffer();
 
 void UART0_Echo_task(void *pvParameters);
 
